@@ -1,4 +1,4 @@
-#Cinema  App
+# Cinema APP
 
 Cinema Hub is a desktop cinema booking application that allows users to explore movies, watch trailers, book tickets, and manage their bookings in a simple and user-friendly way. The project focuses on good UI/UX practices and provides a smooth booking experience.
 
