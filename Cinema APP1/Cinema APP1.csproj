@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\chromiumembeddedframework.runtime.win-x64.135.0.22\build\chromiumembeddedframework.runtime.win-x64.props" Condition="Exists('..\packages\chromiumembeddedframework.runtime.win-x64.135.0.22\build\chromiumembeddedframework.runtime.win-x64.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8960B9BE-FE56-49DD-BFDD-A2A3AED67DDE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cinema_APP1</RootNamespace>
+    <AssemblyName>Cinema APP1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="booking page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booking page.Designer.cs">
+      <DependentUpon>booking page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cinemablack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cinemablack.Designer.cs">
+      <DependentUpon>Cinemablack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cinemawhite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cinemawhite.Designer.cs">
+      <DependentUpon>Cinemawhite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dasboard light mode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dasboard light mode.Designer.cs">
+      <DependentUpon>Dasboard light mode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="elixirblack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="elixirblack.Designer.cs">
+      <DependentUpon>elixirblack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="elixirwhite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="elixirwhite.Designer.cs">
+      <DependentUpon>elixirwhite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Experienceblack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Experienceblack.Designer.cs">
+      <DependentUpon>Experienceblack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Experiencewhite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Experiencewhite.Designer.cs">
+      <DependentUpon>Experiencewhite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Familyblack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Familyblack.Designer.cs">
+      <DependentUpon>Familyblack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Familywhite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Familywhite.Designer.cs">
+      <DependentUpon>Familywhite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gooddoctorblack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gooddoctorblack.Designer.cs">
+      <DependentUpon>gooddoctorblack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hompagewhite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hompagewhite.Designer.cs">
+      <DependentUpon>hompagewhite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="johnwickwhite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="johnwickwhite.Designer.cs">
+      <DependentUpon>johnwickwhite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Johwickblack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Johwickblack.Designer.cs">
+      <DependentUpon>Johwickblack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kungfupandablack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kungfupandablack.Designer.cs">
+      <DependentUpon>kungfupandablack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kungfupandawhite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kungfupandawhite.Designer.cs">
+      <DependentUpon>kungfupandawhite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Membership questionpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Membership questionpage.Designer.cs">
+      <DependentUpon>Membership questionpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="notimetodieblack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notimetodieblack.Designer.cs">
+      <DependentUpon>notimetodieblack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="notimetodiewhite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notimetodiewhite.Designer.cs">
+      <DependentUpon>notimetodiewhite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sign In page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign In page.Designer.cs">
+      <DependentUpon>Sign In page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sign up page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sign up page.Designer.cs">
+      <DependentUpon>sign up page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thegooddoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thegooddoctor.Designer.cs">
+      <DependentUpon>thegooddoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wurablack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wurablack.Designer.cs">
+      <DependentUpon>wurablack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wurawhite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wurawhite.Designer.cs">
+      <DependentUpon>wurawhite.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="booking page.resx">
+      <DependentUpon>booking page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cinemablack.resx">
+      <DependentUpon>Cinemablack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cinemawhite.resx">
+      <DependentUpon>Cinemawhite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dasboard light mode.resx">
+      <DependentUpon>Dasboard light mode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="elixirblack.resx">
+      <DependentUpon>elixirblack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="elixirwhite.resx">
+      <DependentUpon>elixirwhite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Experienceblack.resx">
+      <DependentUpon>Experienceblack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Experiencewhite.resx">
+      <DependentUpon>Experiencewhite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Familyblack.resx">
+      <DependentUpon>Familyblack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Familywhite.resx">
+      <DependentUpon>Familywhite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gooddoctorblack.resx">
+      <DependentUpon>gooddoctorblack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hompagewhite.resx">
+      <DependentUpon>hompagewhite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="johnwickwhite.resx">
+      <DependentUpon>johnwickwhite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Johwickblack.resx">
+      <DependentUpon>Johwickblack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kungfupandablack.resx">
+      <DependentUpon>kungfupandablack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kungfupandawhite.resx">
+      <DependentUpon>kungfupandawhite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Membership questionpage.resx">
+      <DependentUpon>Membership questionpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notimetodieblack.resx">
+      <DependentUpon>notimetodieblack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notimetodiewhite.resx">
+      <DependentUpon>notimetodiewhite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sign In page.resx">
+      <DependentUpon>Sign In page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sign up page.resx">
+      <DependentUpon>sign up page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thegooddoctor.resx">
+      <DependentUpon>thegooddoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wurablack.resx">
+      <DependentUpon>wurablack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wurawhite.resx">
+      <DependentUpon>wurawhite.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\trailer1.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\trailer2.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\chromiumembeddedframework.runtime.win-x64.135.0.22\build\chromiumembeddedframework.runtime.win-x64.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\chromiumembeddedframework.runtime.win-x64.135.0.22\build\chromiumembeddedframework.runtime.win-x64.props'))" />
+  </Target>
+</Project>
