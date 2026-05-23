@@ -25,6 +25,4 @@ Cinema Hub is a C# .NET desktop booking application developed as part of my UAL 
 1. Open the solution in **Visual Studio**
 2. Build and run the application
 
-## Author
-**Abdullahi Tajudeen**  
-UAL Level 3 Software Development
+
